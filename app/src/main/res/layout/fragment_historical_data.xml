@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infoFragmentLinearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/HistoricalData"
+        android:layout_width="232dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:text="@string/HistoricalData"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="400dp"
+        android:layout_height="351dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentStockInfo">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_addTickerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_Ticker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:text="Ticker:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_addTicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Name: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_addNaame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Description: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_addDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_sDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Start Date: "
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/textView_startDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/textView_exchangeCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="Exchange Code: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_addExchangeCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
